@@ -17,7 +17,7 @@ A página principal disponibiliza a lista completa de automóveis anunciados no 
 
 Cada anúncio disponível na página principal inclui um botão (4) que (caso seja premido) o redirecionará para o anúncio em questão, disponibilizando assim mais informações sobre o veículo.
 
-![Esquema de funcionalidades dos anúncios da página principal com os pontos 1,2,3 e 4 mencionados no texto"](./assets/prints/pp1)
+![Esquema de funcionalidades dos anúncios da página principal com os pontos 1,2,3 e 4 mencionados no texto"](./assets/prints/pp1.png)
 
 Caso o utilizador procure algo em particular é possível utilizar o menu de pesquisa (5) presente na mesma página, possibilitando assim filtrar os veículos (6) por:
 
@@ -29,7 +29,7 @@ Caso o utilizador procure algo em particular é possível utilizar o menu de pes
 - Cor
 
 Caso existam veículos correspondentes, a página irá listar todos os veículos correspondentes com a pesquisa (7).
-![Esquema operacional do menu de pesquisa presente na página principal com os pontos 5,6 e 7 mencionados no texto](./assets/prints/pp2)
+![Esquema operacional do menu de pesquisa presente na página principal com os pontos 5,6 e 7 mencionados no texto](./assets/prints/pp2.png)
 
 ### 2. **Detalhes do Veículo**
 
@@ -45,7 +45,7 @@ Encontram-se também disponíveis mais informações sobre o veículo do anúnci
 - Informações importantes como o preço e os dados do anunciante encontram-se com realçados (11)
 - Uma descrição (12), redigida pelo anunciante, permitindo partilhar algo que considere pertinente, ou simplesmente adicionar mais informações sobre o veículo que não se encontrem sobre a alçada dos anteriores pontos
 
-![Esquema de informação de "Detalhes do Veículo", com os pontos 8,9,10,11 e 12 mencionados no texto](./assets/prints/dv1)
+![Esquema de informação de "Detalhes do Veículo", com os pontos 8,9,10,11 e 12 mencionados no texto](./assets/prints/dv1.png)
 
 ### 3. **Criação de anúncio**
 
@@ -60,10 +60,10 @@ A plataforma permite que os utilizadores criem os seus próprios anúncios atrav
 
 É importante realçar que o preenchimento dos diversos campos do formulário é de carácter obrigatório, e que o não preenchimento de qualquer um dos campos presentes no mesmo resultará na falha da criação do anúncio, juntamente com uma mensagem a realçar o primeiro campo de carácter obrigátorio não preenchido
 
-![Esquema operacional para a criação de anúncios, com os pontos 13,15,17,19,20 e 21 mencionados no texto](./assets/prints/ca1)
-![Esquema operacional para a criação de anúncios, com o ponto 14 mencionado no texto](./assets/prints/ca2)
-![Esquema operacional para a criação de anúncios, com o ponto 16 mencionado no texto](./assets/prints/ca3)
-![Esquema operacional para a criação de anúncios, com o ponto 18 mencionado no texto](./assets/prints/ca4)
+![Esquema operacional para a criação de anúncios, com os pontos 13,15,17,19,20 e 21 mencionados no texto](./assets/prints/ca1.png)
+![Esquema operacional para a criação de anúncios, com o ponto 14 mencionado no texto](./assets/prints/ca2.png)
+![Esquema operacional para a criação de anúncios, com o ponto 16 mencionado no texto](./assets/prints/ca3.png)
+![Esquema operacional para a criação de anúncios, com o ponto 18 mencionado no texto](./assets/prints/ca4.png)
 
 Caso o formulário tenha sido corretamente preenchido, irá ser apresentada uma mensagem de sucesso (22)
 
