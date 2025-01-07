@@ -1,0 +1,44 @@
+<!-- Este documento apresenta estrutura a página inicial do site.  -->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.jpg">
+</head>
+<body>
+    <!-- Cabeçalho da página com uma imagem que funciona como botão de menu e um link para a página inicial -->
+    <header>
+        <img id="menu-bar" src="assets/menu-aberto (1).png " alt="icon menu">
+        <a href="index.html">Stand Altamente</a>
+    </header>
+    
+    <!-- Menu de navegação com links para a página inicial e para a página de criação de anúncio -->
+    <div class="menu" id="menu">
+        <a href="index.html">Página Inicial</a>
+        <a href="criarAnuncio.html">Criar Anúncio</a>
+        <a href="sobreNos.html">Sobre Nós</a>
+    </div>
+
+    <!-- Container principal com área de pesquisa e grid para inserção de conteúdo dinâmico -->
+    <div class="container">
+        <div class="area-de-pesquisa">
+            <input type="text" placeholder="Pesquise o veiculo dos seu sonhos" id="campo-pesquisa">
+            <button class="botoes" onclick="pesquisa()">Pesquisar</button>
+        </div>
+
+        <div class="grid">
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 - Stand Altamente - Diogo Mata | Diogo Consciência | Miguel Cruz
+    </footer>
+
+    <script src="automoveis.js"></script> <!-- Script para manipulação dos dados dos veículos -->
+    <script src="script.js"></script> <!-- Script para visualizaçao de dados, pesquisa, menu lateral, pagina principal -->
+</body>
+</html>

@@ -1,0 +1,25 @@
+@media only screen and (max-width: 1200px) {
+
+    .container-detalhes{
+        padding: 0;
+    }
+
+    .display-car{
+        display: grid;
+    }
+
+    .imagens-carros {
+        width: 100%;
+        height: 200px;
+    }
+
+    .imagens-carros {
+        object-fit: scale-down;
+    }
+
+    .conteudo{
+        width: 90%;
+        padding: 0;
+        margin: 10px 20px;
+    }
+  }

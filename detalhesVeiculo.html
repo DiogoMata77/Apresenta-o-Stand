@@ -1,0 +1,58 @@
+<!-- Este documento apresenta detalhes específicos de um automovel, incluindo imagens, modelo, características e descrição. -->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Veículo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detalhesVeiculo.css">
+    <link rel="icon" href="assets/logo.jpg">
+</head>
+<body>
+    <header>
+        <img id="menu-bar" src="assets/menu-aberto (1).png" alt="ícone do menu">
+        <a href="index.html">Stand Altamente</a>
+    </header>
+    <div class="menu" id="menu">
+        <a href="index.html">Página Inicial</a>
+        <a href="criarAnuncio.html">Criar Anúncio</a>
+        <a href="sobreNos.html">Sobre Nós</a>
+    </div>
+    <!-- Container principal para a exibição dos detalhes do veículo -->
+    <div class="container-detalhes">
+        <div class="display-car">
+            <div class="imagens-carros">
+                <img id="imagem-do-carro" class="imagem-carro"/>
+            </div>
+            <div class="conteudo">
+                <div class="marca">
+                    <h2 id="modelo"></h2>
+                </div>
+                <div class="caracteristicas">
+                    <label id="caracteristicas-cados"></label>
+                    <h2 id="preco"></h2>
+                    <h2>Contactos do Vendedor</h2>
+                    <p id="telefone">Contacto: <span id="telefone"></span></p>
+                    <p id="email">Email: <span id="email"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="area-descricao">
+            <h2>Descrição</h2>
+            <p id="descricao"></p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 - Stand Altamente - Diogo Mata | Diogo Consciência | Miguel Cruz
+    </footer>
+    <script src="automoveis.js"></script> <!-- Script para manipulação dos dados dos veículos -->
+    <script src="script.js"></script>   <!-- Script para visualizaçao de dados -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Pop-up de confirmação -->
+</body>
+</html>
+
+<!--Exibição de detalhes de um veículo específico: imagens, modelo, características e descrição extensiva. 
+//O JavaScript atualiza dinamicamente os dados do veículo -->

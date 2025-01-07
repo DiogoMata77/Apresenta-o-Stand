@@ -1,0 +1,110 @@
+<!-- Este documento apresenta uma página para a criação de anúncios de veículos. 
+     O formulário recolhe as informações solicitadas para que sejam inseridas posteriormente no sistema de anúncios. 
+     Contém scripts para manipular os dados que já existem e criar novos automoveis.
+     Contem ainda script de uma biblioteca externa para alertas visuais (SweetAlert2). -->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Anúncio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.jpg">
+</head>
+<body>
+    <header>
+        <img id="menu-bar" src="assets/menu-aberto (1).png" alt="icon menu"> <!-- Imagem do ícone do menu -->
+        <a href="index.html">Stand Altamente</a> <!-- Link para a página inicial, com o nome do stand -->
+    </header>
+    <div class="menu" id="menu"> <!-- Menu de navegação -->
+        <a href="index.html">Página Inicial</a> <!-- Link para a página inicial -->
+        <a href="criarAnuncio.html">Criar Anúncio</a> <!-- Link para a página atual de criação de anúncio -->
+        <a href="sobreNos.html">Sobre Nós</a>
+    </div>
+
+    <div class="container">
+        <h2>Criar Anúncio</h2>
+        <form id="form-anuncio"><!-- Formulário para inserir os dados do anúncio -->
+            <fieldset>
+                <legend>Dados do Veículo</legend>
+                 <!-- Campos do formulário com etiquetas e input obrigatorios para dados como Marca, Modelo, Ano, etc. -->   
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" placeholder="ex: Opel" required><br><br>
+
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo" placeholder="ex: Astra" required><br><br>
+
+                <label for="combustivel">Combustível:</label>
+                <select id="combustivel" name="combustivel" required> <!-- Lista de opções para o combustível -->
+                    <option value="Gasolina">Gasolina</option>
+                    <option value="Gasóleo">Gasóleo</option>
+                    <option value="Híbrido">Híbrido</option>
+                    <option value="Elétrico">Elétrico</option>
+                    <option value="GPL">GPL</option>
+                </select><br><br>
+
+
+                <label for="ano">Ano:</label>
+                <input type="number" id="ano" name="ano" min="1885" max="2025"placeholder="ex: 2004" required><br><br>
+
+                <label for="mes">Mês:</label>
+                    <select id="mes" name="mes" required> <!-- Lista de opções para a seleção do mês -->
+                        <option value="Janeiro">Janeiro</option>
+                        <option value="Fevereiro">Fevereiro</option>
+                        <option value="Março">Março</option>
+                        <option value="Abril">Abril</option>
+                        <option value="Maio">Maio</option>
+                        <option value="Junho">Junho</option>
+                        <option value="Julho">Julho</option>
+                        <option value="Agosto">Agosto</option>
+                        <option value="Setembro">Setembro</option>
+                        <option value="Outubro">Outubro</option>
+                        <option value="Novembro">Novembro</option>
+                        <option value="Dezembro">Dezembro</option>
+                    </select><br><br>
+
+                <label for="quilometros">Quilómetros:</label>
+                <input type="number" id="quilometros" name="quilometros" min="0" max="9999999" required><br><br>
+
+                <label for="cor">Cor:</label>
+                <input type="text" id="cor" name="cor" placeholder="ex: Preto" required><br><br>
+
+                <label for="preco">Preço (€):</label>
+                <input type="number" id="preco" name="preco" min="1" max="9999999" required><br><br>
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required> <!-- Opções para o estado do automovel -->
+                    <option value="Novo">Novo</option>
+                    <option value="Semi-novo">Semi-Novo</option>
+                    <option value="Usado">Usado</option>
+                </select><br><br>
+
+                <label for="descricao">Descrição:</label><br>
+                <textarea id="descricao" name="descricao" rows="4" placeholder="Descrição do veículo" required></textarea><br><br>
+
+                <label for="imagem">Upload de Imagem:</label>
+                <input type="text" id="imagem" name="imagem" placeholder="Link da imagem" required><br><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+                <!-- Botão para submeter o formulário -->
+                <button type="submit" class="botoes">Criar Anúncio</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2024 - Stand Altamente - Diogo Mata | Diogo Consciência | Miguel Cruz
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="automoveis.js"></script> <!-- Adiciona à lista existente de automoveis -->
+    <script src="criarVeiculo.js"></script> <!-- Gere o input e organiza a criação do novo anuncio de automovel -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Pop-up de confirmação -->
+</body> 
+</html>
