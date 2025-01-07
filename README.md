@@ -67,7 +67,7 @@ A plataforma permite que os utilizadores criem os seus próprios anúncios atrav
 
 Caso o formulário tenha sido corretamente preenchido, irá ser apresentada uma mensagem de sucesso (22)
 
-![Imagem ilustrativa da mensagem de sucesso, com o ponto 22 mencionado no texto](./assets/prints/ca5)
+![Imagem ilustrativa da mensagem de sucesso, com o ponto 22 mencionado no texto](./assets/prints/ca5.png)
 
 ## 🖥️ **Arquitetura Tecnológica**
 
