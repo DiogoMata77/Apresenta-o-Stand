@@ -2,13 +2,20 @@
 
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/logo.jpg">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Página Inicial do Stand Altamente. Pesquise o veículo dos seus sonhos e crie anúncios facilmente.">
+        <meta name="keywords" content="Stand Altamente, anúncios de veículos, venda de carros, pesquisa de veículos">
+        <meta name="author" content="Diogo Mata, Diogo Consciência, Miguel Cruz">
+        <meta name="robots" content="index, follow">
+        <title>Página Inicial</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="assets/logo.jpg">
+        <meta property="og:title" content="Página Inicial - Stand Altamente">
+        <meta property="og:description" content="Pesquise e venda veículos facilmente no Stand Altamente.">
+        <meta property="og:image" content="assets/logo.jpg">
+    </head>
 <body>
     <!-- Cabeçalho da página com uma imagem que funciona como botão de menu e um link para a página inicial -->
     <header>
@@ -18,15 +25,15 @@
     
     <!-- Menu de navegação com links para a página inicial e para a página de criação de anúncio -->
     <div class="menu" id="menu">
-        <a href="index.html">Página Inicial</a>
-        <a href="criarAnuncio.html">Criar Anúncio</a>
-        <a href="sobreNos.html">Sobre Nós</a>
+        <a href="index.html">Página Inicial</a> <!-- Link para a página inicial -->
+        <a href="criarAnuncio.html" aria-current="page">Criar Anúncio</a> <!-- Link para a página atual de criação de anúncio -->
+        <a href="sobreNos.html">Sobre Nós</a> <!-- Link para a página sobre nós -->
     </div>
 
     <!-- Container principal com área de pesquisa e grid para inserção de conteúdo dinâmico -->
     <div class="container">
         <div class="area-de-pesquisa">
-            <input type="text" placeholder="Pesquise o veiculo dos seu sonhos" id="campo-pesquisa">
+            <input type="text" placeholder='Pesquise um veículo' id="campo-pesquisa">
             <button class="botoes" onclick="pesquisa()">Pesquisar</button>
         </div>
 

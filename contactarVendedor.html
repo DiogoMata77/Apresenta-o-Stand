@@ -1,0 +1,54 @@
+<!-- Este documento apresenta estrutura da página de contacto ao vendedor/anunciante  -->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactar Vendedor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.jpg">
+    <meta name="description" content="Stand Altamente, contacte o vendedor do veículo que deseja adquirir.">
+    <meta name="keywords" content="anúncios de veículos, criar anúncio, Stand Altamente, venda de carros, anúncios online">
+    <meta name="author" content="Diogo Mata, Diogo Consciência, Miguel Cruz">
+    <meta name="robots" content="index, follow">
+    <meta property="og:description" content="Stand Altamente, contacte o vendedor do veículo que deseja adquirir.">
+</head>
+<body>
+    <!-- Cabeçalho da página com uma imagem que funciona como botão de menu e um link para a página inicial -->
+    <header>
+        <img id="menu-bar" src="assets/menu-aberto (1).png " alt="icon menu">
+        <a href="index.html">Stand Altamente</a>
+    </header>
+    
+    <!-- Menu de navegação com links para a página inicial e para a página de criação de anúncio -->
+    <div class="menu" id="menu">
+        <a href="index.html">Página Inicial</a> <!-- Link para a página inicial -->
+        <a href="criarAnuncio.html" aria-current="page">Criar Anúncio</a> <!-- Link para a página atual de criação de anúncio -->
+        <a href="sobreNos.html">Sobre Nós</a> <!-- Link para a página sobre nós -->
+    </div>
+
+    <!-- Container principal com área de pesquisa e grid para inserção de conteúdo dinâmico -->
+    <div class="formulario">
+        <h2>Envie o seu email</h2>
+        <div>
+            <input placeholder="Nome" type="text" id="nome" required/>
+            <input placeholder="Email" type="email" id="email" required/>
+            <textarea placeholder="Conteudo do Email" name="conteudoEmail" id="conteudoEmail" maxlength="255" id="email-content" required></textarea>
+        </div>
+        <button class="enviar-email botoes">Enviar Email</button>
+        <button class="botao-recuar" onclick="history.back();"> Voltar</button>
+    </div>
+
+    <footer>
+        &copy; 2024 - Stand Altamente - Diogo Mata | Diogo Consciência | Miguel Cruz
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="automoveis.js"></script>
+    <script src="enviarEmail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Pop-up de confirmação -->
+</body>
+</html>

@@ -5,10 +5,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <title>Detalhes do Veículo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="detalhesVeiculo.css">
     <link rel="icon" href="assets/logo.jpg">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
 </head>
 <body>
     <header>
@@ -16,9 +21,9 @@
         <a href="index.html">Stand Altamente</a>
     </header>
     <div class="menu" id="menu">
-        <a href="index.html">Página Inicial</a>
-        <a href="criarAnuncio.html">Criar Anúncio</a>
-        <a href="sobreNos.html">Sobre Nós</a>
+        <a href="index.html">Página Inicial</a> <!-- Link para a página inicial -->
+        <a href="criarAnuncio.html" aria-current="page">Criar Anúncio</a> <!-- Link para a página atual de criação de anúncio -->
+        <a href="sobreNos.html">Sobre Nós</a> <!-- Link para a página sobre nós -->
     </div>
     <!-- Container principal para a exibição dos detalhes do veículo -->
     <div class="container-detalhes">
@@ -32,18 +37,46 @@
                 </div>
                 <div class="caracteristicas">
                     <label id="caracteristicas-cados"></label>
-                    <h2 id="preco"></h2>
-                    <h2>Contactos do Vendedor</h2>
-                    <p id="telefone">Contacto: <span id="telefone"></span></p>
-                    <p id="email">Email: <span id="email"></span></p>
+                    <h1 id="preco"></h1>
+                     <div class="botoes-area-contactos">
+                        <button class="botao-detalhe">Email</button>
+                        <button id="telefone" class="botao-detalhe" onclick="copiarNumero()"></button>
+                     </div>
+                    
                 </div>
             </div>
         </div>
+        <section>
+            <div class="destaques-carro">
+                <div>
+                    <img src="assets/icons/estrada.png" alt="icon" class="icon">
+                    <label id="quilometros"></label>
+                </div>
+                <div>
+                    <img src="assets/icons/combostivel.png" alt="icon" class="icon">
+                    <label id="combostivel"></label>
+                </div>
+                <div>
+                    <img src="assets/icons/estado.png" alt="icon" class="icon">
+                    <label id="estado"></label>
+                </div>
+                <div>
+                    <img src="assets/icons/data.png" alt="icon" class="icon">
+                    <label id="data"></label>
+                </div>
+                <div>
+                    <img src="assets/icons/tinta.png" alt="icon" class="icon">
+                    <label id="cor"></label>
+                </div>
+            </div>
+            
 
-        <div class="area-descricao">
-            <h2>Descrição</h2>
-            <p id="descricao"></p>
-        </div>
+            <div class="area-descricao">
+                <h2>Informações adicionais:</h2>
+                <p id="descricao"></p>
+            </div>
+        </section>
+        
     </div>
     <footer>
         &copy; 2024 - Stand Altamente - Diogo Mata | Diogo Consciência | Miguel Cruz

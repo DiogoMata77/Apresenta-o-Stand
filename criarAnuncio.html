@@ -8,26 +8,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar Anúncio</title>
+    <meta name="description" content="Crie anúncios de veículos de forma rápida e fácil no Stand Altamente. Preencha os detalhes do veículo e publique o seu anúncio em poucos minutos.">
+    <meta name="keywords" content="anúncios de veículos, criar anúncio, Stand Altamente, venda de carros, anúncios online">
+    <meta name="author" content="Diogo Mata, Diogo Consciência, Miguel Cruz">
+    <meta name="robots" content="index, follow">
+    <title>Criar Anúncio - Stand Altamente</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/logo.jpg">
+    <meta property="og:title" content="Criar Anúncio - Stand Altamente">
+    <meta property="og:description" content="Crie anúncios de veículos facilmente no Stand Altamente. Publique em poucos passos!">
+    <meta property="og:image" content="assets/logo.jpg">
 </head>
 <body>
     <header>
-        <img id="menu-bar" src="assets/menu-aberto (1).png" alt="icon menu"> <!-- Imagem do ícone do menu -->
+        <img id="menu-bar" src="assets/menu-aberto (1).png" alt="Ícone do menu de navegação"> <!-- Imagem do ícone do menu -->
         <a href="index.html">Stand Altamente</a> <!-- Link para a página inicial, com o nome do stand -->
     </header>
-    <div class="menu" id="menu"> <!-- Menu de navegação -->
+    <nav aria-label="Menu de navegação principal" class="menu" id="menu"> <!-- Menu de navegação -->
         <a href="index.html">Página Inicial</a> <!-- Link para a página inicial -->
-        <a href="criarAnuncio.html">Criar Anúncio</a> <!-- Link para a página atual de criação de anúncio -->
-        <a href="sobreNos.html">Sobre Nós</a>
-    </div>
+        <a href="criarAnuncio.html" aria-current="page">Criar Anúncio</a> <!-- Link para a página atual de criação de anúncio -->
+        <a href="sobreNos.html">Sobre Nós</a> <!-- Link para a página sobre nós -->
+    </nav>
 
     <div class="container">
-        <h2>Criar Anúncio</h2>
+        
         <form id="form-anuncio"><!-- Formulário para inserir os dados do anúncio -->
-            <fieldset>
-                <legend>Dados do Veículo</legend>
+            <fieldset class="formulario-criar">
+                <h2>Criar Anúncio</h2>
+                <!-- <legend>Dados do Veículo</legend> -->
                  <!-- Campos do formulário com etiquetas e input obrigatorios para dados como Marca, Modelo, Ano, etc. -->   
                 <label for="marca">Marca:</label>
                 <input type="text" id="marca" name="marca" placeholder="ex: Opel" required><br><br>
@@ -94,6 +102,7 @@
 
                 <!-- Botão para submeter o formulário -->
                 <button type="submit" class="botoes">Criar Anúncio</button>
+                <button class="botao-recuar" onclick="history.back();"> Voltar</button>
             </fieldset>
         </form>
     </div>

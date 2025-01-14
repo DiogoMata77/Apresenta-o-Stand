@@ -1,21 +1,48 @@
 //Todos os automoveis standart do stand
 automoveis = [
     {
+    id: 0,
+    modelo: "320d",
+    marca: "BMW", 
+    combustivel: "Gasóleo",
+    cor: "Preto", 
+    preco: 15200, 
+    estado: "Usado",
+    mes: "Julho",
+    ano: 2011,
+    quilometros: 127000,
+    foto: "./assets/automoveis/BMW_320d.jpg",
+    alt: "BMW 320d",
+    telefone: "912345678",
+    descricao: "Com um design intemporal e moderno, é ainda mais potente que o seu antecessor. Carroçaria: Sedan, Portas: 4, Lugares: 5. Velocidade Máxima: 235 km/h, Aceleração dos 0-100 km/h em 7.5 segundos. Motor a gasóleo de 135kW (184cv). Tracção traseira, Tipo de caixa: Automática, Capacidade de Mala: 460 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "BMW Série 3 de 2011, Preto, Gasóleo, 4 Portas, 5 Lugares, Motor 1995cc - 135kW, Tração traseira",
+        keywords: "BMW Série 3, Veículo Gasóleo, BMW 2011"
+        }
+    },
+    {
     id: 1,
     modelo: "Model S",
     marca: "Tesla", 
     combustivel: "Elétrico",
     cor: "Branco", 
-    preco: 80000, 
-    estado: "Novo",
+    preco: 78000, 
+    estado: "Semi-Novo",
     mes: "Janeiro",
     ano: 2023,
     quilometros: 5000,
-    foto: "./assets/Tesla-Model-S_1.webp",
+    foto: "./assets/automoveis/Tesla-Model-S_1.webp",
+    alt: "Tesla Model S Branco",
     telefone: "912345678",
     descricao: "Sofisticado veículo elétrico com alta autonomia.Carroçaria: Sedan, Portas: 4, Lugares: 5. Velocidade Máxima: 250 km/h, Aceleração dos 0-100 km/h em 3.1 segundos. Motor elétrico de 404 kW. Tracção integral, Tipo de caixa: automática, Capacidade de Mala: 793 litros.",
     telefone: "912345678",
-    email: "stand@altamente.com"
+    email: "stand@altamente.com",
+    seo: {
+        description: "Sofisticado veículo elétrico Tesla Model S com alta autonomia. Ano 2023, 5000km, por 80000€. Semi-Novo.",
+        keywords: "Tesla Model S, Veículo Elétrico, Tesla 2023"
+        }
     },
     {
     id: 2,
@@ -23,15 +50,20 @@ automoveis = [
     marca: "Honda",
     combustivel: "Gasolina",
     cor: "Azul",
-    preco: 25000,
+    preco: 24000,
     estado: "Usado",
-    mes: 'Março',
+    mes: "Março",
     ano: 2019,
     quilometros: 35000,
-    foto: "./assets/civic-sport-azul.png",
+    foto: "./assets/automoveis/civic-sport-azul.png",
+    alt: "Honda Civic Azul",
     descricao: "Confiável e eficiente, perfeito para o dia a dia. Carroçaria: Utilitário, Portas: 4, Lugares: 5. Velocidade Máxima: 220 km/h, Aceleração dos 0-100 km/h em 8.5 segundos. Motor de 134 kW. Tracção dianteira, Tipo de caixa: manual. Capacidade de Mala: 478 litros.",
     telefone: "912345678",
-    email: "stand@altamente.com"
+    email: "stand@altamente.com",
+    seo: {
+        description: "Honda Civic eficiente, ano 2019 com 35000km, por 25000€. Em estado usado.",
+        keywords: "Honda Civic, Veículo a Gasolina, Honda 2019"
+        }
     },
     {
     id: 3,
@@ -39,15 +71,20 @@ automoveis = [
     marca: "Toyota",
     combustivel: "Híbrido",
     cor: "Cinzento",
-    preco: 30000,
-    estado: "Semi-novo",
-    mes: 'Agosto',
+    preco: 31000,
+    estado: "Usado",
+    mes: "Agosto",
     ano: 2021,
     quilometros: 20000,
-    foto: "./assets/corolla.jpg",
+    foto: "./assets/automoveis/corolla.jpg",
+    alt: "Toyota Corolla Cinzento",
     descricao: "Confortável e económico, ótimo para longas viagens. Carroçaria: Hatchback, Portas: 5, Lugares: 5. Velocidade Máxima: 180 km/h, Aceleração dos 0-100 km/h em 10.5 segundos. Motor híbrido de 112 kW. Tracção dianteira, Tipo de caixa: automática. Capacidade de Mala: 361 litros",
     telefone: "912345678",
-    email: "stand@altamente.com"
+    email: "stand@altamente.com",
+    seo: {
+        description: "Toyota Corolla confortável e económico. Ano 2021, 20000km, por 30000€. Usado.",
+        keywords: "Toyota Corolla, Veículo Híbrido, Toyota 2021"
+        }
     },
     {
     id: 4,
@@ -55,15 +92,20 @@ automoveis = [
     marca: "Ford",
     combustivel: "Gasolina",
     cor: "Vermelho",
-    preco: 60000,
-    estado: "Novo",
-    mes: 'Junho',
+    preco: 59500,
+    estado: "Semi-Novo",
+    mes: "Junho",
     ano: 2023,
     quilometros: 1000,
-    foto: "./assets/Ford Mustang GT.jpg",
+    foto: "./assets/automoveis/Ford Mustang GT.jpg",
+    alt: "Ford Mustang GT Vermelho",
     descricao: "Carro desportivo potente com um design icônico. Carroçaria: Coupé, Portas: 2, Lugares: 4. Velocidade Máxima: 250 km/h, Aceleração dos 0-100 km/h em 4.3 segundos. Motor de 450 kW. Tracção traseira, Tipo de caixa: manual. Capacidade de Mala: 408 litros.",
     telefone: "912345678",
-    email: "stand@altamente.com"
+    email: "stand@altamente.com",
+    seo: {
+        description: "Ford Mustang GT potente e icónico. Ano 2023, 1000km, por 60000€. Semi-Novo.",
+        keywords: "Ford Mustang GT, Veículo a Gasolina, Ford 2023"
+        }
     },
     {
     id: 5,
@@ -71,15 +113,20 @@ automoveis = [
     marca: "Volkswagen",
     combustivel: "Gasolina",
     cor: "Preto",
-    preco: 35000,
+    preco: 34500,
     estado: "Usado",
-    mes: 'Novembro',
+    mes: "Novembro",
     ano: 2020,
     quilometros: 25000,
-    foto: "./assets/golf.jpg",
+    foto: "./assets/automoveis/golf.jpg",
+    alt: "Volkswagen Golf GTI Preto",
     descricao: "Compacto esportivo, une desempenho e praticidade. Carroçaria: Hatchback, Portas: 5, Lugares: 5. Velocidade Máxima: 238 km/h, Aceleração dos 0-100 km/h em 6.5 segundos. Motor de 180 kW. Tracção dianteira, Tipo de caixa: automática. Capacidade de Mala: 380 litros.",
     telefone: "912345678",
-    email: "stand@altamente.com"
+    email: "stand@altamente.com",
+    seo: {
+        description: "Volkswagen Golf GTI compacto e desportivo. Ano 2020, 25000km, por 35000€. Usado.",
+        keywords: "Volkswagen Golf GTI, Veículo a Gasolina, Volkswagen 2020"
+        }
     },
     {
     id: 6,
@@ -87,15 +134,20 @@ automoveis = [
     marca: "Jeep",
     combustivel: "Gasolina",
     cor: "Verde",
-    preco: 45000,
-    estado: "Semi-novo",
-    mes: 'Julho',
+    preco: 43500,
+    estado: "Usado",
+    mes: "Julho",
     ano: 2022,
     quilometros: 15000,
-    foto: "./assets/jeep_wrangler.png",
-    descricao: "SUV robusto para aventuras off-road. Carroçaria: SUV, Portas: 4, Lugares: 5. Velocidade Máxima: 190 km/h, Aceleração dos 0-100 km/h em 7.6 segundos. Motor de 280 kW. Tracção integral, Tipo de caixa: automática. Capacidade de Mala: 547 litros.",
+    foto: "./assets/automoveis/jeep_wrangler.png",
+    alt: "Jeep Wrangler Verde",
+    descricao: "SUV robusto para aventuras off-road. Carroçaria: SUV, Portas: 4, Lugares: 5. Velocidade Máxima: 190 km/h, Aceleração dos 0-100 km/h em 7.6 segundos. Motor de 280 kW. Tracção 4x4, Tipo de caixa: automática. Capacidade de Mala: 547 litros.",
     telefone: "912345678",
-    email: "stand@altamente.com"
+    email: "stand@altamente.com",
+    seo: {
+        description: "Jeep Wrangler robusto, perfeito para aventuras off-road. Ano 2022, 15000km, por 45000€. Usado.",
+        keywords: "Jeep Wrangler, Veículo a Gasolina, Jeep 2022"
+        }
     },
     {
     id: 7,
@@ -103,14 +155,418 @@ automoveis = [
     marca: "Audi",
     combustivel: "Gasóleo",
     cor: "Cinzento",
-    preco: 50000,
-    estado: "Novo",
-    mes: 'Dezembro',
+    preco: 48500,
+    estado: "Semi-Novo",
+    mes: "Dezembro",
     ano: 2023,
     quilometros: 3000,
-    foto: "./assets/audi_a6.jpg",
+    foto: "./assets/automoveis/audi_a6.jpg",
+    alt: "Audi A6 Cinzento",
     descricao: "Luxo e tecnologia com motor potente e design sofisticado. Carroçaria: Sedan, Portas: 4, Lugares: 5. Velocidade Máxima: 245 km/h, Aceleração dos 0-100 km/h em 5.8 segundos. Motor de 370 kW. Tracção integral, Tipo de caixa: automática. Capacidade de Mala: 530 litros.",
     telefone: "912345678",
-    email: "stand@altamente.com"
+    email: "stand@altamente.com",
+    seo: {
+        description: "Audi A6 luxuoso e sofisticado. Ano 2023, 3000km, por 50000€. Semi-Novo.",
+        keywords: "Audi A6, Veículo a Gasóleo, Audi 2023"
+        }
+    },
+    {
+    id: 8,
+    modelo: "500",
+    marca: "Fiat",
+    combustivel: "Gasolina",
+    cor: "Branco",
+    preco: 6500,
+    estado: "Usado",
+    mes: "Outubro",
+    ano: 2012,
+    quilometros: 155000,
+    foto: "./assets/automoveis/2014-11-11-fiat-500-cult.webp",
+    alt: "Fiat 500",
+    descricao: "Um icónico modelo combina um design retro e moderno. Carroçaria: Hatchback, Portas: 3, Lugares: 5, Velocidade Máxima: 160 km/h, Aceleração dos 0-100 km/h em 12,3 segundos. Motor de 51 kW (69cv). Tracção dianteira, Tipo de caixa: Manual. Capacidade de Mala: 185 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Fiat 500, Ano 2012, Gasolina, Usado",
+        keywords: "Fiat, 500, Gasolina, 5 Lugares, 3 Portas, Hatchback, Caixa Manual"
+        }
+    },
+    {
+    id: 9,
+    modelo: "Fiesta",
+    marca: "Ford",
+    combustivel: "Gasolina",
+    cor: "Cinzento",
+    preco: 550,
+    estado: "Usado",
+    mes: "Dezembro",
+    ano: 1989,
+    quilometros: 320000,
+    foto: "./assets/automoveis/Fiesta-Mk3-08.webp",
+    alt: "Ford Fiesta mk3",
+    descricao: "Um clássico! Compacto, ágil e fiável. Carroçaria: Hatchback, Portas: 5, Lugares: 5, Velocidade Máxima: 140 km/h, Aceleração dos 0-100 km/h em 15,3 segundos. Motor de 37 kW (50cv). Tracção dianteira, Tipo de caixa: Manual. Capacidade de Mala: 250 litros. ",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Ford Fiesta, Gasolina, Fiável, Hatchback",
+        keywords: "Ford, Fiesta, Hatchback, Gasolina, 1989, 5 Portas, 5 Lugares, Caixa Manual"
+        }
+    },   
+    {
+    id: 10,
+    modelo: "Golf",
+    marca: "Volkswagen",
+    combustivel: "Gasolina",
+    cor: "Cinzento",
+    preco: 30500,
+    estado: "Usado",
+    mes: "Março",
+    ano: 2020,
+    quilometros: 42500,
+    foto: "./assets/automoveis/2020_Volkswagen_Golf_Style_1.5_Front.jpg",
+    alt: "Volkswagen Golf 1.5 TSI",
+    descricao: "A mais recente versão do clássico alemão. Carroçaria: Hatchback, Portas: 5, Lugares: 5, Velocidade Máxima 224 km/h, Aceleração dos 0-100 km/h em 8,5 segundos. Motor de 110 kW (150cv). Tracção dianteira, Tipo de caixa: Manual. Capacidade de Mala: 381 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Nova versão do clássico alemão, Hatchback, Gasolina",
+        keywords: "Volkswagen, Golf, Gasolina, 5 Portas, 5 Lugares, Caixa Manual, Usado"
+        }
+    },
+      {
+    id: 11,
+    modelo: "3",
+    marca: "Mazda",
+    combustivel: "Gasolina",
+    cor: "Azul",
+    preco: 4520,
+    estado: "Usado",
+    mes: "Fevereiro",
+    ano: 2006,
+    quilometros: 216000,
+    foto: "./assets/automoveis/2005_mazda_3_4dr-hatchback_s_fq_oem_1_1600.webp",
+    alt: "Mazda 3 BK",
+    descricao: "Fiável citadino japonês. Carroçaria: Hatchback, Portas: 5, Lugares: 5, Velocidade Máxima 182 km/h, Aceleração dos 0-100 km/h em 11 segundos. Motor de 77 kW (105cv). Tracção dianteira, Tipo de caixa: Manual. Capacidade de Mala: 346 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Mazda 3 1.6 MZR, Económico e fiável japonês, 5 portas e 5 lugares, Gasolina",
+        keywords: "Mazda, 3, Gasolina, Usado, 5 Portas, 5 Lugares, Hatchback, Caixa Manual"
+        }
+    }, 
+    {
+    id: 12,
+    modelo: "Stonic",
+    marca: "Kia",
+    combustivel: "Híbrido",
+    cor: "Azul",
+    preco: 24500,
+    estado: "Semi-Novo",
+    mes: "Março",
+    ano: 2024,
+    quilometros: 21000,
+    foto: "./assets/automoveis/2023-kia-stonic-sport-headlights.webp",
+    alt: "Kia Stonic 1.0 T-GDI",
+    descricao: "Económico CUV Coreano. Carroçaria: CUV, Portas: 5, Lugares: 5, Velocidade Máxima 185 km/h, Aceleração dos 0-100 km/h em 10,4 segundos. Motor de 88 kW (120cv). Tracção dianteira , Tipo de caixa: Automática. Capacidade de Mala: 352 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "CUV Coreano, Híbrido, 5 portas e 5 lugares, Económico, Semi-Novo",
+        keywords: "Kia, Stonic, Híbrido, 5 Portas, 5 Lugares, Caixa Automática, Semi-Novo, CUV"
+        }
+    },
+    {
+    id: 13,
+    modelo: "Corsa",
+    marca: "Opel",
+    combustivel: "Gasóleo",
+    cor: "Cinzento",
+    preco: 850,
+    estado: "Usado",
+    mes: "Maio",
+    ano: 1998,
+    quilometros: 282000,
+    foto: "./assets/automoveis/opel_corsa_edition_100_3-door_41.jpg",
+    alt: "Opel Corsa B 1.5TD",
+    descricao: "Citadino fiável e económico. Carroçaria: Hatchback, Portas: 3, Lugares: 5, Velocidade Máxima 165 km/h, Aceleração dos 0-100 km/h em 14 segundos. Motor de 49 kW (67cv). Tracção dianteira, Tipo de caixa: Manual. Capacidade de Mala: 260 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Opel Corsa B, Económico e fiável, 3 Portas e 5 Lugares, Gasóleo",
+        keywords: "Opel, Corsa, Gasóleo, Usado, 3 Portas, 5 Lugares, Hatchback, Cauxa Manual"
+        }
+    },
+    {
+    id: 14,
+    modelo: "XJ",
+    marca: "Jaguar",
+    combustivel: "Gasóleo",
+    cor: "Cinzento",
+    preco: 22500,
+    estado: "Usado",
+    mes: "Maio",
+    ano: 2011,
+    quilometros: 140000,
+    foto: "./assets/automoveis/2011-jaguar-xj-photo-332867-s-original.jpg",
+    alt: "Jaguar XJ 2011",
+    descricao: "Um carro com classe e luxo. Carroçaria: , Portas: 4, Lugares: 5, Velocidade Máxima 250 km/h, Aceleração dos 0-100 km/h em 6,4 segundos. Motor de 202 kW (275cv). Tracção traseira, Tipo de caixa: Automática. Capacidade de Mala: 520 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Carro luxuoso, Sedan de 4 Portas, Gasóleo",
+        keywords: "Jaguar, XJ, Gasóleo, 4 Portas, 5 Lugares, Caixa Automática, Usado, Sedan"
+        }
+    },
+    {
+    id: 15,
+    modelo: "C2",
+    marca: "Citroen",
+    combustivel: "Gasolina",
+    cor: "Cinzento",
+    preco: 3200,
+    estado: "Usado",
+    mes: "Maio",
+    ano: 2005,
+    quilometros: 183000,
+    foto: "./assets/automoveis/Citroën_C2_front-1.jpg",
+    alt: "Citroen C2",
+    descricao: "Citadino económico. Carroçaria: Hatchback , Portas: 3, Lugares: 5, Velocidade Máxima 169 km/h, Aceleração dos 0-100 km/h em 12,9 segundos. Motor de 54 kW (73cv). Tracção dianteira, Tipo de caixa: Manual. Capacidade de Mala: 193 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Citroen, Económico, 3 Portas com 5 Lugares, Gasolina",
+        keywords: "Citroen, C2, Gasolina, 3 Portas, 5 Lugares, Hatchback, Usado, Cixa Manual"
+        }
+    },
+    {
+    id: 16,
+    modelo: "5",
+    marca: "Renault",
+    combustivel: "Elétrico",
+    cor: "Amarelo",
+    preco: 32500,
+    estado: "Novo",
+    mes: "Janeiro",
+    ano: 2025,
+    quilometros: 500,
+    foto: "./assets/automoveis/Renault-5-E-Tech-100-eletrico-2-scaled.jpg",
+    alt: "Renault 5 E-Tech",
+    descricao: "O icónico carro da marca francesa renascido como um elétrico. Carroçaria: Hatchback, Portas: 5, Lugares: 5, Velocidade Máxima 150 km/h, Aceleração dos 0-100 km/h em 8 segundos. Motor de 110 kW (150cv). Tracção dianteira, Tipo de caixa: Automática. Capacidade de Mala: 326 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Icónico carro francês, Elétrico, 5 Portas e 5 Lugares, Novo",
+        keywords: "Renault, 5, Elétrico, 5 Portas, 5 Lugares, Caixa Automática, Novo, Hatchback"
+        }
+    },
+    {
+    id: 17,
+    modelo: "V250d",
+    marca: "Mercedes-Benz",
+    combustivel: "Gasóleo",
+    cor: "Preto",
+    preco: 75000,
+    estado: "Semi-Novo",
+    mes: "Maio",
+    ano: 2024,
+    quilometros: 12000,
+    foto: "./assets/automoveis/Mercedes V-Class (8).webp",
+    alt: "Mercedes-Benz V250d",
+    descricao: "Luxuosa carinha de 6 lugares. Carroçaria: MPV, Portas: 5, Lugares: 6, Velocidade Máxima 205 km/h, Aceleração dos 0-100 km/h em 9,6 segundos. Motor de 140 kW (190cv). Tracção traseira, Tipo de caixa: Automática. Capacidade de Mala: 1030 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Luxuosa carrinha de 6 lugares, Gasóleo, 5 Portas e 6 Lugares, Semi-Novo",
+        keywords: "Mercedes-Benz, V-Class, Gasóleo, 5 Portas, 6 Lugares, Caixa Automática, Semi-Novo, MPV"
+        }
+    },
+    {
+    id: 18,
+    modelo: "X3",
+    marca: "BMW",
+    combustivel: "Gasóleo",
+    cor: "Azul",
+    preco: 9200,
+    estado: "Usado",
+    mes: "Novembro",
+    ano: 2005,
+    quilometros: 105000,
+    foto: "./assets/automoveis/1603529956ff43c4c557b15f8c08c09ed6c3f80cfb.jpg",
+    alt: "BMW X3 2.0d",
+    descricao: "Elegante SUV alemão. Carroçaria: SUV, Portas: 5, Lugares: 5, Velocidade Máxima 198 km/h, Aceleração dos 0-100 km/h em 10,2 segundos. Motor de 110 kW (150cv). Tracção integral, Tipo de caixa: Manual. Capacidade de Mala: 480 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Elegante SUV alemão, Gasóleo, 5 Portas e 5 Lugares, Usado",
+        keywords: "BMW, X3, Gasóleo, 5 Portas, 5 Lugares, Caixa Manual, SUV, Usado"
+        }
+    },
+    {
+    id: 19,
+    modelo: "120d",
+    marca: "BMW",
+    combustivel: "Gasóleo",
+    cor: "Cinzento",
+    preco: 8700,
+    estado: "Usado",
+    mes: "Maio",
+    ano: 2006,
+    quilometros: 260000,
+    foto: "./assets/automoveis/bmw-1-series-sedan-ms-e87.jpg",
+    alt: "BMW Série 1",
+    descricao: "Compacto citadino alemão. Carroçaria: Hatchback, Portas: 5, Lugares: 5, Velocidade Máxima 217 km/h, Aceleração dos 0-100 km/h em 7,9 segundos. Motor de 120 kW (163cv). Tracção traseira, Tipo de caixa: Automática. Capacidade de Mala: 330 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Compacto citadino alemão, Gasóleo, 5 Portas e 5 Lugares, Usado",
+        keywords: "BMW, Série 1, Gasóleo, 5 Portas, 5 Lugares, Caixa Automática, Hatchback, Usado"
+        }
+    },
+    {
+    id: 20,
+    modelo: "S60",
+    marca: "Volvo",
+    combustivel: "Gasolina",
+    cor: "Cinzento",
+    preco: 32500,
+    estado: "Usado",
+    mes: "Abril",
+    ano: 2019,
+    quilometros: 25000,
+    foto: "./assets/automoveis/2019_Volvo_S60_R-Design_Edition_T5_Automatic_2.0_Front.jpg",
+    alt: "Volvo S60 T5 AWD",
+    descricao: "Um design elegante e uma performance para acompanhar. Carroçaria: Sedan, Portas: 4, Lugares: 5, Velocidade Máxima 240 km/h, Aceleração dos 0-100 km/h em 6,4 segundos. Motor de 184 kW (250cv). Tracção integral , Tipo de caixa: Automática. Capacidade de Mala: 325 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Elegante e com ótima performance, Gasolina, Sedan",
+        keywords: "Volvo, S60, 2019, Gasolina, Usado, 4 Portas, 5 Lugares, Caixa Automática"
+        }
+    },
+    {
+    id: 21,
+    modelo: "100",
+    marca: "Audi",
+    combustivel: "Gasolina",
+    cor: "Preto",
+    preco: 19500,
+    estado: "Usado",
+    mes: "Dezembro",
+    ano: 1993,
+    quilometros: 137000,
+    foto: "./assets/automoveis/Audi-100-(type-C4)-5.jpg",
+    alt: "Audi 100 S4",
+    descricao: "Luxuoso carro alemão com performance surpreendente. Carroçaria: Sedan, Portas: 4, Lugares: 5, Velocidade Máxima 249 km/h, Aceleração dos 0-100 km/h em 6,2 segundos. Motor de 206 kW (280cv). Tracção integral, Tipo de caixa: Manual. Capacidade de Mala: 510 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Luxuoso carro alemão com performance surpreendente, Gasolina, Sedan, 4 Portas e 5 Lugares, Usado",
+        keywords: "Audi, 100 S4, 1993, Gasolina, Usado, 4 Portas, 5 Lugares, Caixa Manual, Sedan"
+        }
+    },
+    {
+    id: 22,
+    modelo: "Discovery",
+    marca: "Land Rover",
+    combustivel: "Gasóleo",
+    cor: "Verde",
+    preco: 13000,
+    estado: "Usado",
+    mes: "Julho",
+    ano: 2000,
+    quilometros: 381000,
+    foto: "./assets/automoveis/2000_land-rover_discovery-ii_2000-landrover-68-71727.webp",
+    alt: "Land Rover Discovery",
+    descricao: "Clássico SUV da Land Rover. Carroçaria: SUV, Portas: 5, Lugares: 5, Velocidade Máxima 157 km/h, Aceleração dos 0-100 km/h em 15,3 segundos. Motor de 102 kW (139cv). Tracção 4x4, Tipo de caixa: Manual. Capacidade de Mala: 422 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Clássico SUV, 5 portas e 5 lugares, Gasóleo, Usado",
+        keywords: "Land Rover, Discovery, Gasóleo, 5 Portas, 5 Lugares, Usado, SUV, Caixa Manual"
+        }
+    },
+    {
+    id: 23,
+    modelo: "Cooper",
+    marca: "Mini",
+    combustivel: "Gasolina",
+    cor: "Vermelho",
+    preco: 5250,
+    estado: "Usado",
+    mes: "Fevereiro",
+    ano: 2004,
+    quilometros: 153000,
+    foto: "./assets/automoveis/mini-cooper-1-6i-r50-115hp.jpeg",
+    alt: "Mini Cooper",
+    descricao: "O icónico Mini volta décadas depois. Carroçaria: Hatchback, Portas: 3, Lugares: 4, Velocidade Máxima 203 km/h, Aceleração dos 0-100 km/h em 9,1 segundos. Motor de 88 kW (120cv). Tracção dianteira, Tipo de caixa: Manual. Capacidade de Mala: 160 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "O icónico Mini renovado. 3 Portas e 4 Lugares, Gasolina, Usado",
+        keywords: "Mini, Cooper, Gasolina, 3 Portas, 4 Lugares, Usado, Hatchback, Caixa Manual"
+        }
+    },
+    {
+    id: 24,
+    modelo: "911 Turbo S",
+    marca: "Porsche",
+    combustivel: "Gasolina",
+    cor: "Cinzento",
+    preco: 148000,
+    estado: "Novo",
+    mes: "Novembro",
+    ano: 2024,
+    quilometros: 3500,
+    foto: "./assets/automoveis/AE-Porsche-911-Turbo-S-005.jpeg",
+    alt: "Porsche 911 Turbo S",
+    descricao: "O icónico design da Porsche, agora ainda mais moderno e potente. Carroçaria: Coupé, Portas: 2, Lugares: 4, Velocidade Máxima 330 km/h, Aceleração dos 0-100 km/h em 2,6 segundos. Motor de 478 kW (650cv). Tracção integral, Tipo de caixa: Automática. Capacidade de Mala: 132 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "O icónico Porsche retorna, Coupé, 2 portas e 4 lugares, Novo",
+        keywords: "Porsche, 911 Turbo S, Gasolina, 2 Portas, 4 Lugares, Novo, Coupé, Caixa Automática"
+        }
+    },
+    {
+    id: 25,
+    modelo: "Golf",
+    marca: "Volkswagen",
+    combustivel: "Gasóleo",
+    cor: "Branco",
+    preco: 11800,
+    estado: "Usado",
+    mes: "Outubro",
+    ano: 2012,
+    quilometros: 187000,
+    foto: "./assets/automoveis/406_volkswagen-golf-2009-31.jpg",
+    alt: "Volkswagen Golf 1.6TDi",
+    descricao: "O clássico Volkswagen. Carroçaria: Hatchback, Portas: 5, Lugares: 5, Velocidade Máxima 189 km/h, Aceleração dos 0-100 km/h em 11,2 segundos. Motor de 77 kW (105cv). Tracção dianteira, Tipo de caixa: Automática. Capacidade de Mala: 350 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Clássico Volkswagen, Gasóleo, Usado, 5 Portas e 5 Lugares",
+        keywords: "Volkswagen, Golf, Gasóleo, Usado, 5 Portas, 5 Lugares, Caixa Automática"
+        }
+    },
+    {
+    id: 26,
+    modelo: "Clio",
+    marca: "Renault",
+    combustivel: "Gasóleo",
+    cor: "Laranja",
+    preco: 15600,
+    estado: "Usado",
+    mes: "Dezembro",
+    ano: 2020,
+    quilometros: 87000,
+    foto: "./assets/automoveis/Renault_Clio_V_Genf_2019_1Y7A5590.jpg",
+    alt: "Renault Clio",
+    descricao: "O Renault Clio no seu mais recente formato. Carroçaria: Hatchback, Portas: 5, Lugares: 5, Velocidade Máxima 197 km/h, Aceleração dos 0-100 km/h em 9,9 segundos. Motor de 85 kW (115cv). Tracção dianteira, Tipo de caixa: Manual. Capacidade de Mala: 340 litros.",
+    telefone: "912345678",
+    email: "stand@altamente.com",
+    seo: {
+        description: "Renault Clio, Usado, 5 portas e 5 Lugares, Gasóleo",
+        keywords: "Renault, Clio, Usado, 5 Portas, 5 Lugares, Usado, Caixa Manual"
+        }
     }
     ];
