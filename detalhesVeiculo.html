@@ -74,13 +74,35 @@
             <div class="area-descricao">
                 <h2>Informações adicionais:</h2>
                 <p id="descricao"></p>
+
+                
             </div>
+
+            <div id="googleMap"></div>
         </section>
         
     </div>
     <footer>
         &copy; 2024 - Stand Altamente - Diogo Mata | Diogo Consciência | Miguel Cruz
     </footer>
+
+    <script>
+        function myMap() {
+            var istecLocation = { lat:  38.7633, lng: -9.1573 };
+            var map = new google.maps.Map(document.getElementById("googleMap"), {
+                center: istecLocation,
+                zoom: 20,
+            });
+
+            var marker = new google.maps.Marker({
+                position: istecLocation,
+                map: map,
+                title: "ISTEC - Instituto Superior de Tecnologias Avançadas",
+            });
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=myMap"></script> <!-- Consome a api do googleMaps -->
     <script src="automoveis.js"></script> <!-- Script para manipulação dos dados dos veículos -->
     <script src="script.js"></script>   <!-- Script para visualizaçao de dados -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Pop-up de confirmação -->
