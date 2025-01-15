@@ -1,15 +1,45 @@
-//Gere a exibição e criacao de veículos, pesquisa, detalhe dos veículos selecionados e navegação interativa
+//Este ficheiro negloba desde a criacao de veiculo de forma a que o utilizador possa visualizalos, pesquisa e todas as outras funcionalidades de maior importancia
 
 // Função é responsável por criar e apresentar todos os carros na página principal do site.
+let areaStand = document.querySelector(".grid"); // Variavel que representa a area onde são mostrados os veiculos
+const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key)) || [];
+
 const criarAutomoveis = () => {
-    let areaStand = document.querySelector(".grid"); // Criação dos Carros: Seleciona o elemento HTML com a classe grid, que serve como secçao para os carros.
-    const automoveisLocal = JSON.parse(localStorage.getItem("veiculos")) || [];     // Recuperação dos Veículos: Obtém os veículos armazenados no localStorage, converte de JSON para um array de objetos. Se não existirem veículos armazenados, utiliza um array vazio.
+    
+    const automoveisLocal = getFromLocalStorage("veiculos");     // Recuperação dos Veículos: Obtém os veículos armazenados no localStorage, converte de JSON para um array de objetos. Se não existirem veículos armazenados, utiliza um array vazio.
     const totalAutomoveis = automoveis.concat(automoveisLocal); // Recuperação dos Veículos: Combina os veículos pré-definidos com os armazenados localmente.
 
     totalAutomoveis.forEach((element, index) => { // Criação e Exibição dos Veículos: O método forEach executa uma função para cada veículo no array totalAutomoveis, chama a função criarAutomovel para cada um.
         let automovel = criarAutomovel(element, index);
         areaStand.append(automovel); // Adiciona cada elemento de veículo criado à secção areaStand na página.
     });
+}
+
+//Funcao responsavel por pegar todos os veiculos que estão nos favoritos
+const criarFavoritos = () =>{
+    let favoritos = getFromLocalStorage("coracao");
+
+    const automoveisLocal = getFromLocalStorage("veiculos");
+    const totalAutomoveis = automoveis.concat(automoveisLocal);
+
+    //Valida se existem veiculos adicionados aos favoritos ou não
+    if(!favoritos || favoritos.length === 0){
+        let descricao = document.createElement("h3");
+        descricao.innerText = "Ainda não tem veiculos favoritos";
+
+        areaStand.append(descricao);
+    }
+    else{
+        favoritos.forEach((element) =>{
+
+            totalAutomoveis.forEach((e,i) =>{
+                if(element == e.id){
+                    let automovel = criarAutomovel(e, i);
+                    areaStand.append(automovel);
+                }
+            });
+        });
+    }
 }
 
 // Cria individualmente um elemento HTML para cada veículo, organizando e apresentando suas informações de maneira estruturada.
@@ -68,11 +98,13 @@ const criarDetalhesAutomovel = () => { // Cria os detalhes do veículo na págin
     let urlParameters = new URL(url); // Cria um novo objeto URL com a URL da página
     let modelo = urlParameters.searchParams.get("modelo"); // Obtém o parâmetro 'modelo' da URL
     //Recuperação dos Veículos:
-    const automoveisLocal = JSON.parse(localStorage.getItem("veiculos")) || []; // Pesquisa dos Veículos do Local Storage, caso nao existam devolve um array vazio
+    const automoveisLocal = getFromLocalStorage("veiculos"); // Pesquisa dos Veículos do Local Storage, caso nao existam devolve um array vazio
     const totalAutomoveis = automoveis.concat(automoveisLocal); // Combina os arrays de veículos pré-definidos e armazenados localmente caso existam
 
     // Procura no array totalAutomoveis um objeto cujo id corresponda ao valor do modelo obtido do URL.
     let automovel = totalAutomoveis.find(auto => auto.id == modelo);
+
+    let favoritos = getFromLocalStorage("coracao");
 
     // Verifica se o veículo foi encontrado, se nao for, apresenta uma mensagem de erro e redireciona para a página inicial
     if (!automovel) {
@@ -89,6 +121,10 @@ const criarDetalhesAutomovel = () => { // Cria os detalhes do veículo na págin
     }
 
     // Atualiza os elementos com informações do veículo
+    if(favoritos.includes(modelo))
+        document.getElementById("coracao").src = "assets/icons/coracao-vermelho.png";
+    else
+        document.getElementById("coracao").src = "assets/icons/coracao-preto.png";
     document.querySelector("title").textContent = `${automovel.marca} ${automovel.modelo}` // Seleciona o elemento title e define o texto com a marca, modelo e ano do veículo
     document.getElementById("imagem-do-carro").src = automovel.foto; // Seleciona o elemento img com o ID 'imagem-do-carro' e define o atributo src com a fonte da imagem do veículo
     document.getElementById("modelo").innerText = `${automovel.marca} ${automovel.modelo}`; // Seleciona o elemento com o ID 'modelo' e define o texto com a marca e modelo do veículo
@@ -129,7 +165,7 @@ const pesquisa = () => { // Define a função pesquisa. Esta função é chamada
         areaStand.innerHTML = ''; // Mudar de null para string vazia para limpar o conteúdo e evitar duplicados
     
         // Obtém veículos do Local Storage
-        const automoveisLocal = JSON.parse(localStorage.getItem("veiculos")) || []; // Acessde ao localStorage e tenta obter o item com a chave "veiculos". Converte a string JSON em localStorage de volta para um objeto JavaScript. Se não houver veículos armazenados, então automoveisLocal será definido como um array vazio
+        const automoveisLocal = getFromLocalStorage("veiculos"); // Acessde ao localStorage e tenta obter o item com a chave "veiculos". Converte a string JSON em localStorage de volta para um objeto JavaScript. Se não houver veículos armazenados, então automoveisLocal será definido como um array vazio
         const totalAutomoveis = automoveis.concat(automoveisLocal); // Combina automóveis de duas fontes num único array, de local storage e dos veículos pré-definidos
         
         totalAutomoveis.forEach((automovel, index) => { // Verifica cada veículo
@@ -178,6 +214,9 @@ document.addEventListener("DOMContentLoaded", () => { // Adiciona um listener de
             window.location.href = `./contactarVendedor.html?modelo=${idVeiculo}`;
         });
     }
+    else if(noePaginam === "favoritos.html"){
+        criarFavoritos();
+    }
 
     //Abre e fecha o menu
     const toggleButton = document.getElementById('menu-bar');
@@ -205,4 +244,27 @@ document.addEventListener("DOMContentLoaded", () => { // Adiciona um listener de
             pesquisa();
         }
     });
+});
+
+document.getElementById("coracao").addEventListener("click", function () {
+    let url = window.location.href; // Obtém a URL da página
+    let urlParameters = new URL(url); // Cria um novo objeto URL com a URL da página
+    let modelo = urlParameters.searchParams.get("modelo"); // Obtém o parâmetro 'modelo' da URL
+    let favoritos = getFromLocalStorage("coracao"); // Recupera favoritos ou inicializa vazio
+
+    // Caso este veículo já esteja nos favoritos
+    if (favoritos.includes(modelo)) {
+        document.getElementById("coracao").src = "assets/icons/coracao-preto.png";
+
+        // Remove o modelo dos favoritos
+        favoritos = favoritos.filter(item => item !== modelo);
+    } else {
+        // Caso este veículo não esteja nos favoritos
+        document.getElementById("coracao").src = "assets/icons/coracao-vermelho.png";
+
+        // Adiciona o modelo aos favoritos
+        favoritos.push(modelo);
+    }
+    // Atualiza o localStorage com o array atualizado
+    localStorage.setItem("coracao", JSON.stringify(favoritos));
 });

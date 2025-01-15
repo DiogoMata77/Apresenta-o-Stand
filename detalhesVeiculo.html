@@ -1,5 +1,4 @@
 <!-- Este documento apresenta detalhes específicos de um automovel, incluindo imagens, modelo, características e descrição. -->
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -22,6 +21,7 @@
     </header>
     <div class="menu" id="menu">
         <a href="index.html">Página Inicial</a> <!-- Link para a página inicial -->
+        <a href="favoritos.html">Favoritos</a> <!-- Link para a página inicial -->
         <a href="criarAnuncio.html" aria-current="page">Criar Anúncio</a> <!-- Link para a página atual de criação de anúncio -->
         <a href="sobreNos.html">Sobre Nós</a> <!-- Link para a página sobre nós -->
     </div>
@@ -32,6 +32,9 @@
                 <img id="imagem-do-carro" class="imagem-carro"/>
             </div>
             <div class="conteudo">
+                <div class="zona-favoritos">
+                    <img id="coracao" src="assets/icons/coracao-preto.png"  alt="coracoa"/>
+                </div>
                 <div class="marca">
                     <h2 id="modelo"></h2>
                 </div>
@@ -90,10 +93,13 @@
         function myMap() {
             var istecLocation = { lat:  38.7633, lng: -9.1573 };
             var map = new google.maps.Map(document.getElementById("googleMap"), {
+                //Define a localização com a variavel istecLocation criada assima
                 center: istecLocation,
+                //A quantidade de zoom aplicado
                 zoom: 20,
             });
 
+            //defina a marca vermelha no mapa
             var marker = new google.maps.Marker({
                 position: istecLocation,
                 map: map,

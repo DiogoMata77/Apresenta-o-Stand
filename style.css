@@ -360,6 +360,16 @@ body {
     margin-top: 20px;
 }
 
+.zona-favoritos{
+    display: flex;
+    justify-content: end;
+}
+
+.zona-favoritos img{
+    width:30px;
+    cursor: pointer;
+}
+
 footer {
     background: #333;
     bottom: 0;
